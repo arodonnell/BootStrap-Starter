@@ -1,0 +1,18 @@
+﻿@page   "{id}"
+@model EntAppSecond.Pages.Students.StudentDetailsModel
+@{
+    ViewData["Title"] = "StudentDetails";
+}
+
+<table>
+    <tr>
+        <td>@Model.Student.StudentID</td>
+        <td>@Model.Student.FirstName</td>
+        <td>@Model.Student.LastName</td>
+    </tr>
+</table>
+
+<form method="post">
+    <input type="hidden" asp-for="Student.StudentID" />
+    <button type="submit">Delete</button>
+</form>

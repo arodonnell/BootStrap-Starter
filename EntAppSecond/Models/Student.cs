@@ -10,7 +10,7 @@ namespace EntAppSecond.Models
     {
         [Required (ErrorMessage = "Please Enter a valid Student ID")]
         [Display (Name = "Student I.D.")]
-        [RegularExpression(@"(s|S)\d{7}")]
+        [RegularExpression(@"(s|S)\d{8}")]
         public string StudentID { get; set; } = "";
 
         [Required]
@@ -37,11 +37,11 @@ namespace EntAppSecond.Models
         [Display(Name = "Height")]
         public decimal Height { get; set; }
 
-        [Required]
+        //[Required]
         [Display(Name = "Email")]
         public EmailAddressAttribute Email { get; set; }
 
-        [Required]
+        //[Required]
         [Display(Name = "Email Confirmation")]
         public EmailAddressAttribute EmailConfirmation { get; set; }
     }
