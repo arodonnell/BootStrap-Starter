@@ -8,14 +8,14 @@ namespace EntAppSecond.Models
 {
     public class Student
     {
-        [Required (ErrorMessage = "Please Enter a valid Student ID")]
-        [Display (Name = "Student I.D.")]
+        [Required(ErrorMessage = "Please Enter a valid Student ID")]
+        [Display(Name = "Student I.D.")]
         [RegularExpression(@"(s|S)\d{8}")]
         public string StudentID { get; set; } = "";
 
         [Required]
         [RegularExpression(@"\w{2,}")]
-        [Display (Name = "First Name")]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; } = "";
 
         [Required]
@@ -37,11 +37,11 @@ namespace EntAppSecond.Models
         [Display(Name = "Height")]
         public decimal Height { get; set; }
 
-        //[Required]
+        [Required]
         [Display(Name = "Email")]
         public EmailAddressAttribute Email { get; set; }
 
-        //[Required]
+        [Required]
         [Display(Name = "Email Confirmation")]
         public EmailAddressAttribute EmailConfirmation { get; set; }
     }

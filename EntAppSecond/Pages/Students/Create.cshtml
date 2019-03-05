@@ -1,5 +1,5 @@
 ﻿@page
-@model EntAppSecond.Pages.Students.CreateModel
+@model EntAppSecond.Pages.Students.CreateStudentModel
 @{
     ViewData["Title"] = "Create";
 }
@@ -23,7 +23,7 @@
         <input asp-for=Student.StudentID />
         <span asp-validation-for=Student.StudentID></span>
     </div>
-    <div>
+    @*<div>
         <label asp-for=Student.DOB></label>
         <input asp-for=Student.DOB/>
         <span asp-validation-for=Student.DOB></span>
@@ -47,7 +47,7 @@
         <label asp-for=Student.EmailConfirmation></label>
         <input asp-for=Student.EmailConfirmation/>
         <span asp-validation-for=Student.EmailConfirmation></span>
-    </div>
+    </div>*@
 
     <button type="submit">Press Me</button>
 </form>
